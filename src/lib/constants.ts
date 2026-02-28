@@ -1,0 +1,162 @@
+import type { Project, Skill, Experience, NavLink, GitHubStats } from '@/types';
+
+export const personalInfo = {
+  name: 'Aniket',
+  title: 'Full-Stack Developer',
+  email: 'aniket@example.com',
+  location: 'India',
+  bio: 'Passionate full-stack developer with a love for building beautiful, performant web applications. I specialize in React, Next.js, and Node.js ecosystems.',
+  github: 'https://github.com/aniket9538-coder',
+  linkedin: 'https://linkedin.com/in/aniket',
+  twitter: 'https://twitter.com/aniket',
+};
+
+export const navLinks: NavLink[] = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Contact', href: '#contact' },
+];
+
+export const skills: Skill[] = [
+  { name: 'React', level: 92, category: 'frontend' },
+  { name: 'Next.js', level: 90, category: 'frontend' },
+  { name: 'TypeScript', level: 88, category: 'frontend' },
+  { name: 'JavaScript', level: 93, category: 'frontend' },
+  { name: 'HTML5', level: 95, category: 'frontend' },
+  { name: 'CSS3', level: 90, category: 'frontend' },
+  { name: 'Tailwind CSS', level: 92, category: 'frontend' },
+  { name: 'Framer Motion', level: 80, category: 'frontend' },
+  { name: 'Node.js', level: 85, category: 'backend' },
+  { name: 'Express.js', level: 82, category: 'backend' },
+  { name: 'Python', level: 75, category: 'backend' },
+  { name: 'MongoDB', level: 80, category: 'backend' },
+  { name: 'PostgreSQL', level: 78, category: 'backend' },
+  { name: 'REST APIs', level: 88, category: 'backend' },
+  { name: 'GraphQL', level: 72, category: 'backend' },
+  { name: 'Git', level: 90, category: 'devops' },
+  { name: 'GitHub', level: 90, category: 'devops' },
+  { name: 'Docker', level: 70, category: 'devops' },
+  { name: 'VS Code', level: 95, category: 'devops' },
+  { name: 'Linux', level: 75, category: 'devops' },
+  { name: 'Vercel', level: 88, category: 'devops' },
+  { name: 'AWS', level: 65, category: 'devops' },
+  { name: 'Prisma', level: 78, category: 'devops' },
+];
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'E-Commerce Platform',
+    description: 'A full-featured e-commerce platform with cart, payments, and admin dashboard. Built with React, Node.js, and MongoDB.',
+    tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
+    category: 'web',
+    github: 'https://github.com/aniket9538-coder',
+    live: 'https://example.com',
+    featured: true,
+    gradient: 'from-purple-600 to-indigo-600',
+  },
+  {
+    id: '2',
+    title: 'AI Chat Application',
+    description: 'Real-time AI chat app powered by OpenAI GPT. Features streaming responses, conversation history, and custom personas.',
+    tech: ['Next.js', 'OpenAI', 'TypeScript', 'Tailwind CSS'],
+    category: 'web',
+    github: 'https://github.com/aniket9538-coder',
+    live: 'https://example.com',
+    featured: false,
+    gradient: 'from-cyan-500 to-blue-600',
+  },
+  {
+    id: '3',
+    title: 'Task Management App',
+    description: 'Kanban-style task manager with drag-and-drop, real-time sync, and team collaboration features.',
+    tech: ['React', 'Firebase', 'Tailwind CSS', 'DnD Kit'],
+    category: 'web',
+    github: 'https://github.com/aniket9538-coder',
+    live: 'https://example.com',
+    featured: false,
+    gradient: 'from-green-500 to-teal-600',
+  },
+  {
+    id: '4',
+    title: 'Weather Dashboard',
+    description: 'Beautiful weather app with 7-day forecasts, location search, interactive charts, and PWA support.',
+    tech: ['React', 'Chart.js', 'OpenWeather API', 'PWA'],
+    category: 'web',
+    github: 'https://github.com/aniket9538-coder',
+    live: 'https://example.com',
+    featured: false,
+    gradient: 'from-orange-500 to-red-600',
+  },
+  {
+    id: '5',
+    title: 'Portfolio Website',
+    description: 'This very portfolio — built with Next.js, Framer Motion animations, TypeScript, and Tailwind CSS.',
+    tech: ['Next.js', 'Framer Motion', 'TypeScript', 'Tailwind CSS'],
+    category: 'open-source',
+    github: 'https://github.com/aniket9538-coder/MyPortfillo',
+    live: 'https://example.com',
+    featured: false,
+    gradient: 'from-pink-500 to-rose-600',
+  },
+  {
+    id: '6',
+    title: 'REST API Boilerplate',
+    description: 'Production-ready Node.js REST API boilerplate with auth, validation, rate limiting, and PostgreSQL.',
+    tech: ['Node.js', 'Express', 'PostgreSQL', 'JWT', 'Zod'],
+    category: 'open-source',
+    github: 'https://github.com/aniket9538-coder',
+    live: 'https://example.com',
+    featured: false,
+    gradient: 'from-yellow-500 to-amber-600',
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    id: '1',
+    role: 'Full-Stack Developer',
+    company: 'Tech Startup',
+    date: '2024 – Present',
+    description: [
+      'Built and deployed scalable web applications using Next.js and Node.js',
+      'Improved application performance by 40% through code optimization and caching',
+      'Led frontend development and mentored junior developers',
+    ],
+    type: 'work',
+  },
+  {
+    id: '2',
+    role: 'Frontend Developer Intern',
+    company: 'XYZ Corp',
+    date: '2023 – 2024',
+    description: [
+      'Developed responsive UI components using React and TypeScript',
+      'Collaborated with design team to implement pixel-perfect designs',
+      'Integrated REST APIs and improved state management with Redux',
+    ],
+    type: 'work',
+  },
+  {
+    id: '3',
+    role: 'Open Source Contributor',
+    company: 'Various Projects',
+    date: '2022 – Present',
+    description: [
+      'Contributed to popular open-source repositories on GitHub',
+      'Fixed bugs and added features to React ecosystem libraries',
+      'Wrote documentation and helped triage issues for maintainers',
+    ],
+    type: 'open-source',
+  },
+];
+
+export const githubStats: GitHubStats = {
+  repos: 30,
+  stars: 150,
+  contributions: 500,
+  followers: 80,
+};
